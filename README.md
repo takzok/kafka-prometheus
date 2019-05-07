@@ -7,6 +7,8 @@ Docker-compose file of Apache Kafka metrics monitoring verification using promet
 This docker-compose contains following containers.
 - Apache Kafka (base image)
   - [wurstmeister/kafka](https://hub.docker.com/r/wurstmeister/kafka/)
+
+    Build a container by adding [JMX Prometheus Javaagent](https://mvnrepository.com/artifact/io.prometheus.jmx/jmx_prometheus_javaagent).
 - Zookeeper
   - [wurstmeister/zookeeper](https://hub.docker.com/r/wurstmeister/zookeeper/)
 - prometheus
