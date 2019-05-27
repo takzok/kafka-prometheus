@@ -38,6 +38,8 @@ services:
       - kafka
   grafana:
     image: grafana/grafana
+    links:
+      - prometheus
     ports:
       - 3000:3000
 
